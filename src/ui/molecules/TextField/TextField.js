@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import { HBox, VBox, IconLoader, IconSuccess } from '@ui/atoms'
+import { HBox, VBox, IconSuccess } from '@ui/atoms'
 import { InputError, InputTip } from '@ui/atoms/Typography'
-import { FormLabel, FormAdornment } from '@ui/molecules'
+import { FormLabel, FormAdornment, Loader } from '@ui/molecules'
 import { styled, theme } from '@ui/theme'
 
 const Container = styled.div`
@@ -94,7 +94,7 @@ export const TextField = ({
           onBlur={handleBlur}
         />
         <FormAdornment>
-          {status === 'loading' ? <IconLoader /> : null}
+          {status === 'loading' ? <Loader loading="true" /> : null}
           {status === 'success' ? <IconSuccess /> : null}
         </FormAdornment>
       </FieldContainer>

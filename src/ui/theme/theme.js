@@ -10,6 +10,7 @@ export const theme = {
     errorColor: '#E50202',
     lola: '#BAB3C0',
     divider: '#E6E4E8',
+    successColor: '#27AE60',
   },
   paddings: {
     main: 16,
