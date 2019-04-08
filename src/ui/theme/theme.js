@@ -11,6 +11,7 @@ export const theme = {
     lola: '#BAB3C0',
     divider: '#E6E4E8',
     successColor: '#27AE60',
+    whiteSmoke: '#E9E9E9',
   },
   paddings: {
     main: 16,
