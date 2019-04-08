@@ -5,6 +5,7 @@ import { styled } from '@ui/theme'
 import { Body2 } from '@ui/atoms/Typography'
 import { Header, TextField, ButtonAccent } from '@ui/molecules'
 import { action } from '@storybook/addon-actions'
+import { boolean } from '@storybook/addon-knobs'
 
 const Wrapper = styled.div`
   padding: ${({ theme }) => theme.paddings.main}px;
@@ -30,7 +31,13 @@ storiesOf('ui/pages', module).add('SignIn', () => {
         </Wrapper>
       </Flex1>
       <Wrapper>
-        <ButtonAccent onPress={action('press')}>Отправить</ButtonAccent>
+        <ButtonAccent
+          disabled={boolean('disabled', false)}
+          loading={boolean('loading', false)}
+          onPress={action('press')}
+        >
+          Отправить
+        </ButtonAccent>
       </Wrapper>
     </PageTemplate>
   )

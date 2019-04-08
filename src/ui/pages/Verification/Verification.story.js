@@ -70,7 +70,13 @@ storiesOf('ui/pages', module).add('Verification', () => {
         </Wrapper>
       </Flex1>
       <Wrapper>
-        <ButtonAccent onPress={action('press')}>Отправить</ButtonAccent>
+        <ButtonAccent
+          disabled={boolean('disabled', false)}
+          loading={boolean('loading', false)}
+          onPress={action('press')}
+        >
+          Отправить
+        </ButtonAccent>
       </Wrapper>
     </PageTemplate>
   )

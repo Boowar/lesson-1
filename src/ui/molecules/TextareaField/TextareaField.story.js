@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { TextareaField } from './TextareaField'
-import { boolean, select, text } from '@storybook/addon-knobs'
+import { boolean, text } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { withState } from '@dump247/storybook-state'
 
